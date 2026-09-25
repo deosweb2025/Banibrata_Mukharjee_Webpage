@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-primary: #1e3a8a; /* Deep Blue for Trust */
+  --color-brand-secondary: #0ea5e9; /* Light blue accent */
+  --color-brand-dark: #0f172a;
+  --color-brand-light: #f8fafc;
+  --color-brand-accent: #f59e0b; /* Amber/Gold for premium feel */
+  
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-serif: 'Playfair Display', serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* Account for fixed navbar */
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-brand-light);
+  color: var(--color-brand-dark);
+  overflow-x: hidden;
+}
+
+/* Custom Selection */
+::selection {
+  background-color: var(--color-brand-primary);
+  color: white;
+}
+
+/* Image Gallery Lightbox utilities */
+.lightbox-open {
+  overflow: hidden;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
