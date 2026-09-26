@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import About from '../components/About';
+import Expertise from '../components/Expertise';
 import Services from '../components/Services';
 import Gallery from '../components/Gallery';
 import Contact from '../components/Contact';
@@ -15,6 +16,7 @@ const Home = () => {
       <main>
         <Hero />
         <About />
+        <Expertise />
         <Services />
         <Gallery />
         <Contact />

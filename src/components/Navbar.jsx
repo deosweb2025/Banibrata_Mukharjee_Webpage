@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { siteData } from '../data/siteData';
+import logoImg from '../assets/images/logo.jpg';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -30,9 +31,9 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto px-6 max-w-7xl flex items-center justify-between">
-        <a href="#home" className="flex items-center gap-2 group">
-          <div className="w-10 h-10 bg-[var(--color-brand-primary)] text-white flex items-center justify-center font-serif text-xl font-bold rounded-sm group-hover:bg-[var(--color-brand-accent)] transition-colors">
-            {siteData.company.logo}
+        <a href="#home" className="flex items-center gap-3 group">
+          <div className="w-11 h-11 bg-white rounded-sm overflow-hidden shadow-sm group-hover:scale-105 transition-transform flex items-center justify-center p-0.5">
+            <img src={logoImg} alt="Banibrata Mukherjee Logo" className="w-full h-full object-contain" />
           </div>
           <div className={`font-serif font-bold text-lg leading-tight transition-colors ${isScrolled ? 'text-gray-900' : 'text-white'}`}>
             Banibrata<br />Mukherjee

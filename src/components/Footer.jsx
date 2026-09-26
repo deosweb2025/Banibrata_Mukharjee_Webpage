@@ -1,5 +1,6 @@
 import React from 'react';
 import { siteData } from '../data/siteData';
+import logoImg from '../assets/images/logo.jpg';
 
 const Footer = () => {
   return (
@@ -8,9 +9,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           
           <div className="lg:col-span-2">
-            <div className="flex items-center gap-2 mb-6">
-              <div className="w-10 h-10 bg-[var(--color-brand-primary)] text-white flex items-center justify-center font-serif text-xl font-bold rounded-sm">
-                {siteData.company.logo}
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-11 h-11 bg-white rounded-sm overflow-hidden shadow-sm flex items-center justify-center p-0.5">
+                <img src={logoImg} alt="Banibrata Mukherjee Logo" className="w-full h-full object-contain" />
               </div>
               <div className="font-serif font-bold text-lg leading-tight">
                 Banibrata<br />Mukherjee
