@@ -51,12 +51,12 @@ const Hero = () => {
   }, []);
 
   return (
-    <section id="home" ref={heroRef} className="relative min-h-[100svh] flex flex-col justify-start md:justify-center overflow-hidden bg-[var(--color-brand-dark)] pt-20 pb-48 md:pt-32 md:pb-24">
+    <section id="home" ref={heroRef} className="relative min-h-[100svh] flex flex-col justify-center overflow-hidden bg-[var(--color-brand-dark)] pt-28 pb-16 md:pt-32 md:pb-24">
       {/* Decorative background gradients for desktop */}
       <div className="hidden md:block absolute top-0 left-0 w-[600px] h-[600px] bg-[var(--color-brand-primary)] opacity-5 rounded-full blur-3xl -translate-y-1/2 -translate-x-1/4 pointer-events-none" />
       <div className="hidden md:block absolute bottom-0 right-0 w-[400px] h-[400px] bg-[var(--color-brand-accent)] opacity-5 rounded-full blur-3xl translate-y-1/3 translate-x-1/4 pointer-events-none" />
 
-      <div className="container mx-auto px-6 max-w-7xl relative z-10 flex-grow flex flex-col justify-start md:justify-center">
+      <div className="container mx-auto px-6 max-w-7xl relative z-10 flex-grow flex flex-col justify-center">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16 items-center">
           
           {/* LEFT SIDE: Desktop Image Card - Hidden on mobile */}
